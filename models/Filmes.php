@@ -10,7 +10,7 @@ class Filmes {
     private function conectarBD() {
         $host = 'localhost';
         $usuario = 'root';
-        $senha = '';
+        $senha = '' ;
         $banco = 'filmes_db';
         
         $this->conexao = new mysqli($host, $usuario, $senha, $banco);
