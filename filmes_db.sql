@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 01/06/2026 às 23:51
--- Versão do servidor: 10.4.32-MariaDB
--- Versão do PHP: 8.2.12
+-- Tempo de geração: 02/06/2026 às 00:08
+-- Versão do servidor: 10.4.28-MariaDB
+-- Versão do PHP: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -46,7 +46,7 @@ INSERT INTO `filmes` (`id`, `nome`, `diretor`, `data_lancamento`, `nota`, `creat
 (2, 'Interestelar', 'Christopher Nolan', '2014-11-06', 8.6, '2026-05-26 00:01:45', '2026-05-26 00:01:45'),
 (3, 'Parasita', 'Bong Joon-ho', '2019-05-30', 8.5, '2026-05-26 00:01:45', '2026-05-26 00:14:07'),
 (6, 'Planeta dos Macacos: A Origem', 'Rupert Wyatt', '2011-01-01', 10.0, '2026-05-26 00:16:22', '2026-05-26 00:16:22'),
-(7, 'Forrest Gump', 'Robert Zemeckis', '1994-07-06', 8.8, '2026-06-01 21:50:41', '2026-06-01 21:50:41');
+(7, 'A Lista de Schindler', 'Steven Spielberg', '1993-12-15', 9.1, '2026-06-01 22:07:41', '2026-06-01 22:07:41');
 
 --
 -- Índices para tabelas despejadas
