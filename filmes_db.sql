@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 26/05/2026 às 02:20
+-- Tempo de geração: 01/06/2026 às 23:51
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -35,7 +35,7 @@ CREATE TABLE `filmes` (
   `nota` decimal(3,1) NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
   `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
-) ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Despejando dados para a tabela `filmes`
@@ -45,7 +45,8 @@ INSERT INTO `filmes` (`id`, `nome`, `diretor`, `data_lancamento`, `nota`, `creat
 (1, 'O Poderoso Chefão (1972)', 'Francis Ford Coppola', '1972-03-24', 9.2, '2026-05-26 00:01:45', '2026-05-26 00:01:47'),
 (2, 'Interestelar', 'Christopher Nolan', '2014-11-06', 8.6, '2026-05-26 00:01:45', '2026-05-26 00:01:45'),
 (3, 'Parasita', 'Bong Joon-ho', '2019-05-30', 8.5, '2026-05-26 00:01:45', '2026-05-26 00:14:07'),
-(6, 'Planeta dos Macacos: A Origem', 'Rupert Wyatt', '2011-01-01', 10.0, '2026-05-26 00:16:22', '2026-05-26 00:16:22');
+(6, 'Planeta dos Macacos: A Origem', 'Rupert Wyatt', '2011-01-01', 10.0, '2026-05-26 00:16:22', '2026-05-26 00:16:22'),
+(7, 'Forrest Gump', 'Robert Zemeckis', '1994-07-06', 8.8, '2026-06-01 21:50:41', '2026-06-01 21:50:41');
 
 --
 -- Índices para tabelas despejadas
@@ -65,7 +66,7 @@ ALTER TABLE `filmes`
 -- AUTO_INCREMENT de tabela `filmes`
 --
 ALTER TABLE `filmes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
